@@ -1,3 +1,3 @@
 module github.com/skx/http-post-dump
 
-go 1.26.6
+go 1.24.5
