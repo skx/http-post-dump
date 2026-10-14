@@ -18,10 +18,6 @@ type LoggedRequest struct {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
-		http.Error(w, "Only POST requests are supported", http.StatusMethodNotAllowed)
-		return
-	}
 
 	body, err := io.ReadAll(r.Body)
 	if err != nil {
